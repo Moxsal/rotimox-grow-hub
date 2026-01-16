@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import rotimoxLogo from "@/assets/rotimox-logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -23,13 +24,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <nav className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-xl">R</span>
-          </div>
-          <span className="font-display font-bold text-xl text-foreground">
-            Rotimox<span className="text-accent">Sales</span>
-          </span>
+        <Link to="/" className="flex items-center">
+          <img 
+            src={rotimoxLogo} 
+            alt="Rotimox Digital Growth" 
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
