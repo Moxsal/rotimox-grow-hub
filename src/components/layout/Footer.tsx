@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import rotimoxLogo from "@/assets/rotimox-logo.png";
 
 const Footer = () => {
   const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!";
   const emailLink = "mailto:Rotimiexpert42@gmail.com";
+  const phoneLink = "tel:+234919945833";
 
   const quickLinks = [
     { name: "Home", href: "/" },
@@ -32,13 +34,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-display font-bold text-xl">R</span>
-              </div>
-              <span className="font-display font-bold text-xl">
-                Rotimox<span className="text-accent">Sales</span>
-              </span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src={rotimoxLogo} 
+                alt="Rotimox Digital Growth" 
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               A worldwide digital agency helping businesses grow with Google My Business, reviews management, and digital marketing solutions.
@@ -48,17 +49,24 @@ const Footer = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-200"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-5 h-5" />
               </a>
               <a
                 href={emailLink}
-                className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-200"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href={phoneLink}
+                className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-200"
+                aria-label="Call Us"
+              >
+                <Phone className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -106,19 +114,28 @@ const Footer = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm group"
                 >
-                  <Phone className="w-5 h-5 text-accent" />
-                  +234 919 945 833
+                  <MessageCircle className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
+                  <span className="group-hover:underline">WhatsApp Chat</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={phoneLink}
+                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm group"
+                >
+                  <Phone className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
+                  <span className="group-hover:underline">+234 919 945 833</span>
                 </a>
               </li>
               <li>
                 <a
                   href={emailLink}
-                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm group"
                 >
-                  <Mail className="w-5 h-5 text-accent" />
-                  Rotimiexpert42@gmail.com
+                  <Mail className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
+                  <span className="group-hover:underline">Rotimiexpert42@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-center gap-3 text-primary-foreground/70 text-sm">
