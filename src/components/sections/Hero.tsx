@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20a%20free%20consultation.";
+  const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20a%20free%20consultation.";
 
   const features = [
     "Google My Business Growth",

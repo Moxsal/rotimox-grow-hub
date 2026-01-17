@@ -3,9 +3,9 @@ import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import rotimoxLogo from "@/assets/rotimox-logo.png";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!";
+  const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!";
   const emailLink = "mailto:Rotimiexpert42@gmail.com";
-  const phoneLink = "tel:+234919945833";
+  const phoneLink = "tel:+2349169945833";
 
   const quickLinks = [
     { name: "Home", href: "/" },
@@ -126,7 +126,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors text-sm group"
                 >
                   <Phone className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
-                  <span className="group-hover:underline">+234 919 945 833</span>
+                  <span className="group-hover:underline">+234 916 994 5833</span>
                 </a>
               </li>
               <li>

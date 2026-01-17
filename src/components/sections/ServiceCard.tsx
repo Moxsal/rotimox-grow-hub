@@ -20,7 +20,7 @@ const ServiceCard = ({
   ctaMessage,
   id,
 }: ServiceCardProps) => {
-  const whatsappLink = `https://wa.me/234919945833?text=${encodeURIComponent(ctaMessage)}`;
+  const whatsappLink = `https://wa.me/2349027284784?text=${encodeURIComponent(ctaMessage)}`;
 
   return (
     <div
