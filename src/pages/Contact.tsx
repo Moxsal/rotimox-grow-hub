@@ -13,10 +13,12 @@ import {
   Send,
   Clock,
   CheckCircle,
+  Loader2,
 } from "lucide-react";
 
 const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
 const emailLink = "mailto:Rotimiexpert42@gmail.com";
+const phoneLink = "tel:+234919945833";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -36,18 +38,40 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      toast({
+        title: "Please fill all fields",
+        description: "Name, email, and message are required.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 800));
 
     // Open WhatsApp with the message
     const message = `Hello Rotimox Sales!
 
-Name: ${formData.name}
-Email: ${formData.email}
+Name: ${formData.name.trim()}
+Email: ${formData.email.trim()}
 
-Message: ${formData.message}`;
+Message: ${formData.message.trim()}`;
 
     window.open(
       `https://wa.me/234919945833?text=${encodeURIComponent(message)}`,
@@ -55,8 +79,8 @@ Message: ${formData.message}`;
     );
 
     toast({
-      title: "Message Sent!",
-      description: "We've opened WhatsApp for you to complete your message. We'll get back to you soon!",
+      title: "✅ Message Ready!",
+      description: "WhatsApp opened with your message. Send it to complete!",
     });
 
     setFormData({ name: "", email: "", message: "" });
@@ -102,16 +126,33 @@ Message: ${formData.message}`;
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent transition-colors group"
+                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-200 group cursor-pointer"
                 >
-                  <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center group-hover:bg-success transition-colors">
+                  <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center group-hover:bg-success group-hover:scale-110 transition-all duration-200">
                     <MessageCircle className="w-6 h-6 text-success group-hover:text-success-foreground transition-colors" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
+                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">WhatsApp</h3>
                     <p className="text-accent font-medium">+234 919 945 833</p>
                     <p className="text-muted-foreground text-sm mt-1">
-                      Click to chat with us directly
+                      Tap to chat with us directly →
+                    </p>
+                  </div>
+                </a>
+
+                {/* Phone Call */}
+                <a
+                  href={phoneLink}
+                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-200 group cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-200">
+                    <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Call Us</h3>
+                    <p className="text-accent font-medium">+234 919 945 833</p>
+                    <p className="text-muted-foreground text-sm mt-1">
+                      Tap to call us directly →
                     </p>
                   </div>
                 </a>
@@ -119,16 +160,16 @@ Message: ${formData.message}`;
                 {/* Email */}
                 <a
                   href={emailLink}
-                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent transition-colors group"
+                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-200 group cursor-pointer"
                 >
-                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors">
+                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all duration-200">
                     <Mail className="w-6 h-6 text-accent group-hover:text-accent-foreground transition-colors" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Email</h3>
                     <p className="text-accent font-medium">Rotimiexpert42@gmail.com</p>
                     <p className="text-muted-foreground text-sm mt-1">
-                      Click to send us an email
+                      Tap to send us an email →
                     </p>
                   </div>
                 </a>
@@ -214,14 +255,17 @@ Message: ${formData.message}`;
                   type="submit"
                   variant="accent"
                   size="lg"
-                  className="w-full"
+                  className="w-full group"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    "Sending..."
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Preparing Message...
+                    </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4" />
+                      <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       Send Message
                     </>
                   )}
