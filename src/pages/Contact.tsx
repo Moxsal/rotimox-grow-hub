@@ -16,9 +16,9 @@ import {
   Loader2,
 } from "lucide-react";
 
-const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
+const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
 const emailLink = "mailto:Rotimiexpert42@gmail.com";
-const phoneLink = "tel:+234919945833";
+const phoneLink = "tel:+2349169945833";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -74,7 +74,7 @@ Email: ${formData.email.trim()}
 Message: ${formData.message.trim()}`;
 
     window.open(
-      `https://wa.me/234919945833?text=${encodeURIComponent(message)}`,
+      `https://wa.me/2349027284784?text=${encodeURIComponent(message)}`,
       "_blank"
     );
 
@@ -133,7 +133,7 @@ Message: ${formData.message.trim()}`;
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">WhatsApp</h3>
-                    <p className="text-accent font-medium">+234 919 945 833</p>
+                    <p className="text-accent font-medium">+234 902 728 4784</p>
                     <p className="text-muted-foreground text-sm mt-1">
                       Tap to chat with us directly →
                     </p>
@@ -150,7 +150,7 @@ Message: ${formData.message.trim()}`;
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Call Us</h3>
-                    <p className="text-accent font-medium">+234 919 945 833</p>
+                    <p className="text-accent font-medium">+234 916 994 5833</p>
                     <p className="text-muted-foreground text-sm mt-1">
                       Tap to call us directly →
                     </p>
