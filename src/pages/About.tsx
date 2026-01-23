@@ -12,7 +12,7 @@ import {
   Share2,
 } from "lucide-react";
 
-const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
+const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
 
 const expertise = [
   {
@@ -85,11 +85,11 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="font-display text-3xl md:text-4xl text-foreground">
-                Over 5 Years of{" "}
+                Over 7 Years of{" "}
                 <span className="text-accent">Professional Experience</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                At Rotimox Sales, we're passionate about helping businesses thrive in the digital landscape. With over 5 years of professional experience, we've developed proven strategies that deliver real, measurable results.
+                At Rotimox Sales, we're passionate about helping businesses thrive in the digital landscape. With over 7 years of professional experience and 1,000+ happy clients worldwide, we've developed proven strategies that deliver real, measurable results.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 As a worldwide digital agency, we serve clients across all countries, bringing the same level of dedication, expertise, and personalized attention to every project. Whether you're a local business looking to dominate your market or a global brand seeking to expand your reach, we have the skills and experience to help you succeed.
@@ -97,7 +97,7 @@ const About = () => {
 
               <div className="space-y-4">
                 {[
-                  "Trusted by 500+ businesses worldwide",
+                  "Trusted by 1,000+ businesses worldwide",
                   "Serving clients in 50+ countries",
                   "98% client satisfaction rate",
                   "Dedicated 24/7 support team",

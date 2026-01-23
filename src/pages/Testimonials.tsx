@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 
 const testimonials = [
   {
+    name: "Solomon Amlalo Donkor",
+    role: "Director",
+    company: "DAS GH LIMITED",
+    content:
+      "Thank you for the opportunity. My experience working with Rotimox was excellent. One thing I truly appreciate is his strong communication skills and ability to deliver effectively. I was pleasantly surprised when I saw my company listed online with a live URL, making all our services visible to clients. I was very happy with the result. Thank you.",
+    rating: 5,
+  },
+  {
     name: "Sarah Johnson",
     role: "CEO",
     company: "TechStart Inc.",
@@ -79,7 +87,7 @@ const testimonials = [
   },
 ];
 
-const whatsappLink = "https://wa.me/234919945833?text=Hello%20Rotimox%20Sales!%20I've%20seen%20your%20testimonials%20and%20I'm%20interested%20in%20your%20services.";
+const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I've%20seen%20your%20testimonials%20and%20I'm%20interested%20in%20your%20services.";
 
 const Testimonials = () => {
   return (
@@ -118,7 +126,7 @@ const Testimonials = () => {
             <div className="w-px h-16 bg-border hidden md:block" />
             <div className="text-center">
               <div className="text-5xl font-display font-bold text-foreground mb-2">
-                500+
+                1,000+
               </div>
               <div className="text-muted-foreground text-sm">Happy Clients</div>
             </div>

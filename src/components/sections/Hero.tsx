@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="space-y-8 animate-slide-up">
             <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-              Trusted by 500+ Businesses Worldwide
+              Trusted by 1,000+ Businesses Worldwide
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight">
@@ -37,7 +37,7 @@ const Hero = () => {
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed max-w-xl">
               Professional GMB Optimization, Social Media Growth & Website Development with over{" "}
-              <strong className="text-accent">5 Years Experience</strong>.
+              <strong className="text-accent">7 Years Experience</strong>.
             </p>
 
             {/* Features List */}
@@ -74,11 +74,11 @@ const Hero = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-muted rounded-xl">
-                  <div className="text-4xl font-display font-bold text-accent">5+</div>
+                  <div className="text-4xl font-display font-bold text-accent">7+</div>
                   <div className="text-sm text-muted-foreground mt-1">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-muted rounded-xl">
-                  <div className="text-4xl font-display font-bold text-accent">500+</div>
+                  <div className="text-4xl font-display font-bold text-accent">1,000+</div>
                   <div className="text-sm text-muted-foreground mt-1">Happy Clients</div>
                 </div>
                 <div className="text-center p-4 bg-muted rounded-xl">
