@@ -154,7 +154,7 @@ const Index = () => {
                 <span className="text-accent">Priority</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                With over 5 years of professional experience, we've helped hundreds of businesses gain visibility, trust, and unlimited clients. As a worldwide digital agency, we serve clients across all countries with the same dedication and expertise.
+                With over 7 years of professional experience, we've helped 1,000+ happy and satisfied clients worldwide gain visibility, trust, and unlimited customers. As a worldwide digital agency, we serve clients across all countries with the same dedication and expertise.
               </p>
 
               <div className="space-y-4">
@@ -182,11 +182,11 @@ const Index = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-card rounded-2xl shadow-lg p-6 text-center card-hover">
-                <div className="text-5xl font-display font-bold text-accent mb-2">5+</div>
+                <div className="text-5xl font-display font-bold text-accent mb-2">7+</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
               <div className="bg-card rounded-2xl shadow-lg p-6 text-center card-hover mt-8">
-                <div className="text-5xl font-display font-bold text-accent mb-2">500+</div>
+                <div className="text-5xl font-display font-bold text-accent mb-2">1,000+</div>
                 <div className="text-muted-foreground">Happy Clients</div>
               </div>
               <div className="bg-card rounded-2xl shadow-lg p-6 text-center card-hover">
@@ -242,7 +242,7 @@ const Index = () => {
             Ready to Grow Your Business?
           </h2>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-            Join hundreds of satisfied clients who have transformed their online presence with Rotimox Sales. Get your free consultation today!
+            Join 1,000+ satisfied clients worldwide who have transformed their online presence with Rotimox Sales. Get your free consultation today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
