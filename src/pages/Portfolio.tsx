@@ -43,7 +43,7 @@ const projects = [
       "Optimized GMB profile, added geo-targeted keywords, and managed reputation — driving a 6x increase in calls and direction requests within 90 days.",
     image:
       "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://www.google.com/maps",
+    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20Bright%20Smile%20Dental%20case%20study%3F",
     review: {
       text:
         "Our clinic now shows up first when people search nearby. Calls have tripled and our reviews look amazing.",
@@ -59,7 +59,7 @@ const projects = [
       "Designed a TikTok and Instagram growth strategy, produced viral product reels, and ran targeted ads — scaling followers from 1.2K to 45K in 6 months.",
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://www.instagram.com",
+    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20UrbanThreads%20Boutique%20case%20study%3F",
     review: {
       text:
         "Sales exploded after Rotimox took over our socials. Their content strategy is on another level.",
@@ -75,7 +75,7 @@ const projects = [
       "Implemented an automated review-request system and reputation workflow — taking the restaurant from 45 reviews at 3.8★ to 500+ reviews at 4.9★.",
     image:
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://www.google.com/maps",
+    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20GreenLeaf%20Restaurant%20case%20study%3F",
     review: {
       text:
         "We went from invisible to fully booked weekends. The review growth was a game changer.",
@@ -91,7 +91,7 @@ const projects = [
       "Designed a high-converting law firm website with appointment booking, SEO structure, and trust-building visuals — 15x increase in qualified monthly leads.",
     image:
       "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com",
+    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20Apex%20Legal%20case%20study%3F",
     review: {
       text:
         "Beautiful, professional, and fast. Our clients constantly compliment the new site.",
@@ -107,7 +107,7 @@ const projects = [
       "Launched lead-gen funnels on Instagram & Facebook, ran retargeting ads, and built an automated DM flow — 200+ qualified leads per month.",
     image:
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://www.instagram.com",
+    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20FitCore%20Gym%20case%20study%3F",
     review: {
       text:
         "Our membership doubled in 4 months. Truly professional team.",
@@ -250,7 +250,7 @@ const Portfolio = () => {
                   >
                     <Button variant="default" className="w-full sm:w-auto">
                       <ExternalLink className="w-4 h-4" />
-                      Visit Website
+                      {project.liveUrl.includes("wa.me") ? "Request Case Study" : "Visit Website"}
                     </Button>
                   </a>
 

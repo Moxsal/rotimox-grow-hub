@@ -11,6 +11,7 @@ const navigation = [
   { name: "Portfolio", href: "/portfolio" },
   { name: "GMB Showcase", href: "/gmb-showcase" },
   { name: "Before & After", href: "/before-after" },
+  { name: "Audits", href: "/audits" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" },
