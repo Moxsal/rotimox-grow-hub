@@ -21,6 +21,38 @@ import { Link } from "react-router-dom";
  */
 const projects = [
   {
+    name: "Nia Spa",
+    category: "Website Design",
+    description:
+      "Designed and developed a stunning, mobile-friendly spa website that showcases services, enables online bookings, and elevates the brand's digital presence — leading to more clients and increased profits.",
+    image:
+      "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
+    liveUrl: "https://www.Nia-spa.com",
+    review: {
+      text:
+        "Working with Rotimox Sales was one of the best decisions for my business. I was honestly impressed by the quality, professionalism, and attention to detail delivered on my website project. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly. Rotimox Sales truly deserves more than a 5-star rating for the outstanding work and support provided.",
+      author: "Nia Spa",
+      company: "Nia Spa",
+      rating: 5,
+    },
+  },
+  {
+    name: "BGM Realty Limited",
+    category: "Website Design",
+    description:
+      "Built a professional real estate website with property listings, contact forms, and SEO-optimized structure — dramatically improving the company's visibility and professionalism online.",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    liveUrl: "https://www.bgmrealtylimited.com",
+    review: {
+      text:
+        "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The support, dedication, and quality of service provided helped scale my business beyond what I expected. The website development and business growth strategies greatly improved my company's visibility and professionalism. I sincerely value the impact Rotimox has made in my business journey.",
+      author: "Gerald",
+      company: "BGM Realty Limited",
+      rating: 5,
+    },
+  },
+  {
     name: "DAS GH LIMITED",
     category: "Website Design",
     description:

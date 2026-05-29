@@ -6,6 +6,22 @@ import { Link } from "react-router-dom";
 
 const testimonials = [
   {
+    name: "Nia Spa",
+    role: "Founder",
+    company: "Nia Spa",
+    content:
+      "Working with Rotimox Sales was one of the best decisions for my business. I was honestly impressed by the quality, professionalism, and attention to detail delivered on my website project. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly. The entire process was smooth, professional, and exceeded my expectations. Rotimox Sales truly deserves more than a 5-star rating for the outstanding work and support provided. I highly recommend his services to anyone looking to grow their business professionally online.",
+    rating: 5,
+  },
+  {
+    name: "Gerald",
+    role: "Director",
+    company: "BGM Realty Limited",
+    content:
+      "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The support, dedication, and quality of service provided helped scale my business beyond what I expected. The website development and business growth strategies greatly improved my company's visibility and professionalism. I truly appreciate the hard work and commitment invested into my business growth. I sincerely value the impact Rotimox has made in my business journey and I will continue recommending these services to others with confidence.",
+    rating: 5,
+  },
+  {
     name: "Solomon Amlalo Donkor",
     role: "Director",
     company: "DAS GH LIMITED",
