@@ -10,6 +10,7 @@ import Portfolio from "./pages/Portfolio";
 import GMBShowcase from "./pages/GMBShowcase";
 import BeforeAfter from "./pages/BeforeAfter";
 import Testimonials from "./pages/Testimonials";
+import Audits from "./pages/Audits";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/gmb-showcase" element={<GMBShowcase />} />
           <Route path="/before-after" element={<BeforeAfter />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/audits" element={<Audits />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
