@@ -75,11 +75,19 @@ const services = [
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO",
-    company: "TechStart Inc.",
+    name: "Nia Spa",
+    role: "Founder",
+    company: "Nia Spa",
     content:
-      "Rotimox Sales transformed our online presence. Our Google My Business listing went from invisible to ranking #1 in local searches within just 2 months!",
+      "Working with Rotimox Sales was one of the best decisions for my business. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly.",
+    rating: 5,
+  },
+  {
+    name: "Gerald",
+    role: "Director",
+    company: "BGM Realty Limited",
+    content:
+      "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The website development greatly improved my company's visibility and professionalism.",
     rating: 5,
   },
   {
