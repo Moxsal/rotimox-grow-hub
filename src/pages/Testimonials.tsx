@@ -158,6 +158,8 @@ const Testimonials = () => {
         </div>
       </section>
 
+      <DynamicTestimonials />
+
       {/* Testimonials Grid */}
       <section className="section-padding bg-background">
         <div className="container-custom">
