@@ -242,8 +242,9 @@ const TestimonialsPanel = () => {
         const path = `${Date.now()}-${file.name.replace(/[^a-z0-9.\-_]/gi, "_")}`;
         const { error: upErr } = await supabase.storage.from("testimonials").upload(path, file);
         if (upErr) throw upErr;
-        const { data: pub } = supabase.storage.from("testimonials").getPublicUrl(path);
-        image_url = pub.publicUrl;
+        const { data: signed, error: sErr } = await supabase.storage.from("testimonials").createSignedUrl(path, 60 * 60 * 24 * 365 * 5);
+        if (sErr) throw sErr;
+        image_url = signed.signedUrl;
       }
       const { error } = await supabase.from("testimonials").insert({ ...form, image_url });
       if (error) throw error;
