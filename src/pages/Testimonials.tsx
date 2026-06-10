@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import TestimonialCard from "@/components/sections/TestimonialCard";
+import DynamicTestimonials from "@/components/sections/DynamicTestimonials";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -156,6 +157,8 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
+
+      <DynamicTestimonials />
 
       {/* Testimonials Grid */}
       <section className="section-padding bg-background">
