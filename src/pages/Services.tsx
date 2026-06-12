@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import ServiceCard from "@/components/sections/ServiceCard";
 import { Button } from "@/components/ui/button";
-import { MapPin, Star, Share2, Globe, MessageCircle, ArrowRight } from "lucide-react";
+import { MapPin, Star, Share2, Globe, MessageCircle, ArrowRight, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -72,6 +72,23 @@ const services = [
     ],
     ctaText: "Build My Website",
     ctaMessage: "Hi! I need a professional website for my business.",
+  },
+  {
+    id: "jiji",
+    icon: ShoppingBag,
+    title: "Jiji Solutions",
+    description:
+      "End-to-end support for Jiji sellers — account setup, listing optimisation, promotion strategy, and growth assistance to help you attract more buyers and close more sales.",
+    features: [
+      "Jiji business account setup",
+      "Professional listing optimisation",
+      "Targeted product promotion",
+      "Pricing and positioning advice",
+      "Growth and visibility strategy",
+      "Ongoing seller support",
+    ],
+    ctaText: "Get Jiji Help",
+    ctaMessage: "Hi! I'd like help with my Jiji business — setup, optimisation, and growth.",
   },
 ];
 

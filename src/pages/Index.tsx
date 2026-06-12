@@ -91,19 +91,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Michael Chen",
-    role: "Owner",
-    company: "Chen's Restaurant",
+    name: "Solomon Amlalo Donkor",
+    role: "Director",
+    company: "DAS GH LIMITED",
     content:
-      "The review management service was incredible. We went from 3.2 to 4.8 stars on Google, and our customer inquiries doubled. Highly recommended!",
-    rating: 5,
-  },
-  {
-    name: "Emily Williams",
-    role: "Marketing Director",
-    company: "Williams & Co",
-    content:
-      "Professional, responsive, and results-driven. The social media growth strategy brought us 10x more engagement in just 3 months.",
+      "Strong communication and effective delivery. Seeing my company listed online with a live URL made all our services visible to clients. Very happy with the result.",
     rating: 5,
   },
 ];
@@ -231,6 +223,7 @@ const Index = () => {
               <TestimonialCard key={index} {...testimonial} />
             ))}
           </div>
+          {/* Remove demo entries — homepage now shows only real verified clients. */}
 
           <div className="text-center mt-12">
             <Link to="/testimonials">

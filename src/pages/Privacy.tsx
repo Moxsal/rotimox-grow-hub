@@ -87,8 +87,8 @@ const Privacy = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have any questions about this privacy policy or how we handle your data, please contact us at{" "}
-                  <a href="mailto:Rotimiexpert42@gmail.com" className="text-accent hover:underline">
-                    Rotimiexpert42@gmail.com
+                  <a href="mailto:rotimoxgrowthhubs@gmail.com" className="text-accent hover:underline">
+                    rotimoxgrowthhubs@gmail.com
                   </a>
                 </p>
               </div>

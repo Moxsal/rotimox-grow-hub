@@ -12,25 +12,24 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { whatsappLink as buildWa } from "@/config/contact";
 
 /**
- * 📂 PORTFOLIO DATA
- * To add a new project, just append a new object to this array.
- * Each project supports: image, business name, description, category,
- * live URL, and a client review.
+ * Real client website portfolio.
+ * To add a new project, append an object below with a verified live URL.
  */
 const projects = [
   {
     name: "Nia Spa",
     category: "Website Design",
     description:
-      "Designed and developed a stunning, mobile-friendly spa website that showcases services, enables online bookings, and elevates the brand's digital presence — leading to more clients and increased profits.",
+      "Designed and developed a mobile-friendly spa website that showcases services, enables online bookings, and elevates the brand's digital presence — bringing in more clients and increased revenue for the business.",
     image:
       "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
     liveUrl: "https://www.Nia-spa.com",
     review: {
       text:
-        "Working with Rotimox Sales was one of the best decisions for my business. I was honestly impressed by the quality, professionalism, and attention to detail delivered on my website project. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly. Rotimox Sales truly deserves more than a 5-star rating for the outstanding work and support provided.",
+        "Working with Rotimox Sales was one of the best decisions for my business. The quality, professionalism, and attention to detail on my website project were outstanding. Since launching, I've gained more clients, improved my online presence, and grown my business profits significantly.",
       author: "Nia Spa",
       company: "Nia Spa",
       rating: 5,
@@ -40,13 +39,13 @@ const projects = [
     name: "BGM Realty Limited",
     category: "Website Design",
     description:
-      "Built a professional real estate website with property listings, contact forms, and SEO-optimized structure — dramatically improving the company's visibility and professionalism online.",
+      "Built a professional real estate website with property listings, lead capture forms, and a clean, SEO-friendly structure — improving the company's visibility, credibility, and inbound enquiries online.",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
     liveUrl: "https://www.bgmrealtylimited.com",
     review: {
       text:
-        "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The support, dedication, and quality of service provided helped scale my business beyond what I expected. The website development and business growth strategies greatly improved my company's visibility and professionalism. I sincerely value the impact Rotimox has made in my business journey.",
+        "Rotimox Sales is one of the most reliable and professional experts I've worked with. The support, dedication, and quality of service helped scale my business beyond expectations. The website and growth strategies greatly improved my company's visibility and professionalism.",
       author: "Gerald",
       company: "BGM Realty Limited",
       rating: 5,
@@ -56,7 +55,7 @@ const projects = [
     name: "DAS GH LIMITED",
     category: "Website Design",
     description:
-      "Built a professional corporate website for a Ghana-based services company, listing all offerings with a live URL that boosted online visibility and client inquiries.",
+      "Built a professional corporate website for a Ghana-based services company, with a full service listing and a live URL that boosted online visibility and client enquiries from day one.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     liveUrl: "https://dasghlimited.com",
@@ -68,97 +67,16 @@ const projects = [
       rating: 5,
     },
   },
-  {
-    name: "Bright Smile Dental Clinic",
-    category: "Google My Business Optimization",
-    description:
-      "Optimized GMB profile, added geo-targeted keywords, and managed reputation — driving a 6x increase in calls and direction requests within 90 days.",
-    image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20Bright%20Smile%20Dental%20case%20study%3F",
-    review: {
-      text:
-        "Our clinic now shows up first when people search nearby. Calls have tripled and our reviews look amazing.",
-      author: "Dr. A. Mensah",
-      company: "Bright Smile Dental",
-      rating: 5,
-    },
-  },
-  {
-    name: "UrbanThreads Boutique",
-    category: "Social Media Marketing",
-    description:
-      "Designed a TikTok and Instagram growth strategy, produced viral product reels, and ran targeted ads — scaling followers from 1.2K to 45K in 6 months.",
-    image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20UrbanThreads%20Boutique%20case%20study%3F",
-    review: {
-      text:
-        "Sales exploded after Rotimox took over our socials. Their content strategy is on another level.",
-      author: "Chioma O.",
-      company: "UrbanThreads Boutique",
-      rating: 5,
-    },
-  },
-  {
-    name: "GreenLeaf Restaurant",
-    category: "Reviews Growth",
-    description:
-      "Implemented an automated review-request system and reputation workflow — taking the restaurant from 45 reviews at 3.8★ to 500+ reviews at 4.9★.",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20GreenLeaf%20Restaurant%20case%20study%3F",
-    review: {
-      text:
-        "We went from invisible to fully booked weekends. The review growth was a game changer.",
-      author: "Marcus T.",
-      company: "GreenLeaf Restaurant",
-      rating: 5,
-    },
-  },
-  {
-    name: "Apex Legal Consultants",
-    category: "Website Design",
-    description:
-      "Designed a high-converting law firm website with appointment booking, SEO structure, and trust-building visuals — 15x increase in qualified monthly leads.",
-    image:
-      "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20Apex%20Legal%20case%20study%3F",
-    review: {
-      text:
-        "Beautiful, professional, and fast. Our clients constantly compliment the new site.",
-      author: "Mr. K. Adeyemi",
-      company: "Apex Legal Consultants",
-      rating: 5,
-    },
-  },
-  {
-    name: "FitCore Gym",
-    category: "Social Media Marketing",
-    description:
-      "Launched lead-gen funnels on Instagram & Facebook, ran retargeting ads, and built an automated DM flow — 200+ qualified leads per month.",
-    image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://wa.me/2349027284784?text=Hi%20Rotimox!%20Can%20I%20see%20the%20FitCore%20Gym%20case%20study%3F",
-    review: {
-      text:
-        "Our membership doubled in 4 months. Truly professional team.",
-      author: "Daniel I.",
-      company: "FitCore Gym",
-      rating: 5,
-    },
-  },
 ];
 
 const stats = [
   { icon: Award, value: "7+", label: "Years Experience" },
-  { icon: Briefcase, value: "100+", label: "Projects Completed" },
-  { icon: Users, value: "1,000+", label: "Businesses Helped" },
-  { icon: Globe, value: "Worldwide", label: "Happy Clients" },
+  { icon: Briefcase, value: "100+", label: "Projects Delivered" },
+  { icon: Users, value: "Verified", label: "Real Client Work" },
+  { icon: Globe, value: "Worldwide", label: "Clients Served" },
 ];
 
-const whatsappLink =
-  "https://wa.me/2349027284784?text=Hello%20Rotimox!%20I'd%20like%20to%20start%20a%20project.";
+const whatsappLink = buildWa("Hello Rotimox Sales! I'd like to start a project.");
 
 const StarRating = ({ rating }: { rating: number }) => (
   <div className="flex items-center gap-1">
@@ -176,7 +94,6 @@ const StarRating = ({ rating }: { rating: number }) => (
 const Portfolio = () => {
   return (
     <Layout>
-      {/* Hero */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
@@ -187,9 +104,9 @@ const Portfolio = () => {
             <span className="text-accent">Real Growth.</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg max-w-3xl mx-auto mb-8">
-            Explore a selection of websites we've built and businesses we've
-            helped grow with GMB optimization, social media marketing, and
-            review growth.
+            A selection of websites we've built and businesses we actively
+            support — each project below is verified, live, and trusted by the
+            client behind it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
@@ -208,7 +125,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Stats / Achievements */}
       <section className="py-12 bg-background border-b border-border">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -229,7 +145,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Grid */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-14">
@@ -241,7 +156,7 @@ const Portfolio = () => {
               <span className="text-accent">We've Grown</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Each project below includes a live link and a verified client
+              Every project below includes a live link and a verified client
               review.
             </p>
           </div>
@@ -252,11 +167,10 @@ const Portfolio = () => {
                 key={i}
                 className="group bg-card rounded-2xl shadow-lg border border-border overflow-hidden flex flex-col card-hover transition-all duration-300"
               >
-                {/* Screenshot */}
                 <div className="relative overflow-hidden aspect-[16/10] bg-muted">
                   <img
                     src={project.image}
-                    alt={`${project.name} website screenshot`}
+                    alt={`${project.name} website preview`}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -265,7 +179,6 @@ const Portfolio = () => {
                   </span>
                 </div>
 
-                {/* Content */}
                 <div className="p-6 md:p-8 flex flex-col flex-1">
                   <h3 className="font-display text-2xl text-foreground mb-2">
                     {project.name}
@@ -282,11 +195,10 @@ const Portfolio = () => {
                   >
                     <Button variant="default" className="w-full sm:w-auto">
                       <ExternalLink className="w-4 h-4" />
-                      {project.liveUrl.includes("wa.me") ? "Request Case Study" : "Visit Website"}
+                      Visit Website
                     </Button>
                   </a>
 
-                  {/* Client Review */}
                   <div className="mt-auto bg-muted/60 rounded-xl p-5 border border-border relative">
                     <Quote className="absolute top-3 right-3 w-5 h-5 text-accent/40" />
                     <StarRating rating={project.review.rating} />
@@ -314,7 +226,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground mb-6">

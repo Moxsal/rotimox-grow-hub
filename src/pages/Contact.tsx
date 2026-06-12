@@ -8,17 +8,17 @@ import { useToast } from "@/hooks/use-toast";
 import {
   MessageCircle,
   Mail,
-  Phone,
   MapPin,
   Send,
   Clock,
   CheckCircle,
   Loader2,
+  Send as SendIcon,
 } from "lucide-react";
+import { CONTACT, EMAIL_LINK, TELEGRAM_LINK, WHATSAPP_DEFAULT } from "@/config/contact";
 
-const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
-const emailLink = "mailto:Rotimiexpert42@gmail.com";
-const phoneLink = "tel:+2349169945833";
+const whatsappLink = WHATSAPP_DEFAULT;
+const emailLink = EMAIL_LINK;
 
 const Contact = () => {
   const { toast } = useToast();
@@ -133,26 +133,28 @@ Message: ${formData.message.trim()}`;
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">WhatsApp</h3>
-                    <p className="text-accent font-medium">+234 902 728 4784</p>
+                    <p className="text-accent font-medium">Chat with us on WhatsApp</p>
                     <p className="text-muted-foreground text-sm mt-1">
-                      Tap to chat with us directly →
+                      Tap to start a direct chat →
                     </p>
                   </div>
                 </a>
 
-                {/* Phone Call */}
+                {/* Telegram */}
                 <a
-                  href={phoneLink}
+                  href={TELEGRAM_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-200 group cursor-pointer"
                 >
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-200">
-                    <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="w-12 h-12 bg-[#229ED9]/10 rounded-xl flex items-center justify-center group-hover:bg-[#229ED9] group-hover:scale-110 transition-all duration-200">
+                    <SendIcon className="w-6 h-6 text-[#229ED9] group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Call Us</h3>
-                    <p className="text-accent font-medium">+234 916 994 5833</p>
+                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Telegram</h3>
+                    <p className="text-accent font-medium">Join us on Telegram</p>
                     <p className="text-muted-foreground text-sm mt-1">
-                      Tap to call us directly →
+                      @{CONTACT.telegramUsername} — tap to open Telegram →
                     </p>
                   </div>
                 </a>
@@ -167,7 +169,7 @@ Message: ${formData.message.trim()}`;
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Email</h3>
-                    <p className="text-accent font-medium">Rotimiexpert42@gmail.com</p>
+                    <p className="text-accent font-medium break-all">{CONTACT.email}</p>
                     <p className="text-muted-foreground text-sm mt-1">
                       Tap to send us an email →
                     </p>

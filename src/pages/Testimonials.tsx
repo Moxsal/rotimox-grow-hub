@@ -11,7 +11,7 @@ const testimonials = [
     role: "Founder",
     company: "Nia Spa",
     content:
-      "Working with Rotimox Sales was one of the best decisions for my business. I was honestly impressed by the quality, professionalism, and attention to detail delivered on my website project. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly. The entire process was smooth, professional, and exceeded my expectations. Rotimox Sales truly deserves more than a 5-star rating for the outstanding work and support provided. I highly recommend his services to anyone looking to grow their business professionally online.",
+      "Working with Rotimox Sales was one of the best decisions for my business. I was honestly impressed by the quality, professionalism, and attention to detail delivered on my website project. Since launching the website, I have gained more clients, improved my online presence, and increased my business profits significantly. The entire process was smooth, professional, and exceeded my expectations. I highly recommend his services to anyone looking to grow their business professionally online.",
     rating: 5,
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     role: "Director",
     company: "BGM Realty Limited",
     content:
-      "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The support, dedication, and quality of service provided helped scale my business beyond what I expected. The website development and business growth strategies greatly improved my company's visibility and professionalism. I truly appreciate the hard work and commitment invested into my business growth. I sincerely value the impact Rotimox has made in my business journey and I will continue recommending these services to others with confidence.",
+      "Rotimox Sales is one of the most reliable and professional experts I have ever worked with. The support, dedication, and quality of service provided helped scale my business beyond what I expected. The website development and business growth strategies greatly improved my company's visibility and professionalism. I truly appreciate the hard work and commitment invested into my business growth and will continue recommending these services.",
     rating: 5,
   },
   {
@@ -27,79 +27,7 @@ const testimonials = [
     role: "Director",
     company: "DAS GH LIMITED",
     content:
-      "Thank you for the opportunity. My experience working with Rotimox was excellent. One thing I truly appreciate is his strong communication skills and ability to deliver effectively. I was pleasantly surprised when I saw my company listed online with a live URL, making all our services visible to clients. I was very happy with the result. Thank you.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Johnson",
-    role: "CEO",
-    company: "TechStart Inc.",
-    content:
-      "Rotimox Sales transformed our online presence. Our Google My Business listing went from invisible to ranking #1 in local searches within just 2 months! The team was incredibly responsive and delivered beyond our expectations.",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "Owner",
-    company: "Chen's Restaurant",
-    content:
-      "The review management service was incredible. We went from 3.2 to 4.8 stars on Google, and our customer inquiries doubled. The professionalism and attention to detail were outstanding.",
-    rating: 5,
-  },
-  {
-    name: "Emily Williams",
-    role: "Marketing Director",
-    company: "Williams & Co",
-    content:
-      "Professional, responsive, and results-driven. The social media growth strategy brought us 10x more engagement in just 3 months. I highly recommend their services to any business looking to grow online.",
-    rating: 5,
-  },
-  {
-    name: "David Okonkwo",
-    role: "Founder",
-    company: "Okonkwo Ventures",
-    content:
-      "Working with Rotimox Sales was a game-changer for our business. They built us a stunning website that perfectly represents our brand and converts visitors into clients. Truly world-class service.",
-    rating: 5,
-  },
-  {
-    name: "Lisa Thompson",
-    role: "Operations Manager",
-    company: "Thompson Healthcare",
-    content:
-      "Our clinic's online reputation was struggling before we found Rotimox Sales. Now we have over 500 five-star reviews and new patient inquiries have increased by 400%. Absolutely phenomenal results!",
-    rating: 5,
-  },
-  {
-    name: "James Rodriguez",
-    role: "CEO",
-    company: "Rodriguez Auto Group",
-    content:
-      "The GMB optimization service is worth every penny. We're now the top result for auto services in our area, and our phone hasn't stopped ringing. Thank you, Rotimox Sales!",
-    rating: 5,
-  },
-  {
-    name: "Amanda Foster",
-    role: "Owner",
-    company: "Foster's Boutique",
-    content:
-      "Our Instagram went from 500 followers to over 25,000 in just 4 months. The content strategy and engagement tactics they implemented were brilliant. Sales have never been better!",
-    rating: 5,
-  },
-  {
-    name: "Robert Kim",
-    role: "Managing Partner",
-    company: "Kim Legal Associates",
-    content:
-      "As a law firm, reputation is everything. Rotimox Sales helped us establish a strong online presence with excellent reviews and a professional website. Client consultations have increased by 300%.",
-    rating: 5,
-  },
-  {
-    name: "Patricia Brown",
-    role: "Director",
-    company: "Brown Consulting",
-    content:
-      "I was skeptical at first, but the results speak for themselves. Our lead generation improved dramatically, and the ROI on their services has been incredible. A true partner in growth.",
+      "My experience working with Rotimox was excellent. What I truly appreciate is his strong communication skills and ability to deliver effectively. I was pleasantly surprised when I saw my company listed online with a live URL, making all our services visible to clients. Very happy with the result.",
     rating: 5,
   },
 ];

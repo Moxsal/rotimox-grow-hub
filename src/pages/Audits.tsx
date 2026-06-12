@@ -128,6 +128,43 @@ const Audits = () => {
         </div>
       </section>
 
+      {/* Pricing — Business Audit Service */}
+      <section className="py-16 bg-background border-b border-border">
+        <div className="container-custom">
+          <div className="max-w-2xl mx-auto bg-card border border-border rounded-2xl shadow-sm p-8 md:p-10 text-center">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent bg-accent/10 px-3 py-1 rounded-full mb-4">
+              Business Audit Service
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-3">
+              Professional Business Audit
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              A detailed audit of your Google Business Profile, website, and online visibility — with a clear, prioritised action plan you can implement straight away.
+            </p>
+            <div className="flex items-baseline justify-center gap-2 mb-6">
+              <span className="font-display text-5xl md:text-6xl font-bold text-foreground">$10</span>
+              <span className="text-muted-foreground text-sm">one-off audit</span>
+            </div>
+            <ul className="text-left text-sm text-foreground/80 grid sm:grid-cols-2 gap-y-2 gap-x-6 mb-8 max-w-md mx-auto">
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent mt-0.5" />GMB profile review</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent mt-0.5" />Local SEO check</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent mt-0.5" />Review & rating analysis</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent mt-0.5" />Clear action plan</li>
+            </ul>
+            <a
+              href={`https://wa.me/2349027284784?text=${encodeURIComponent("Hello Rotimox! I'd like to request the $10 Business Audit Service.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="accent" size="lg">
+                <MessageCircle className="w-5 h-5" />
+                Request Audit
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Filters */}
       <section className="py-10 bg-background border-b border-border">
         <div className="container-custom flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
