@@ -102,8 +102,8 @@ const Terms = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   For questions about these terms, please contact us at{" "}
-                  <a href="mailto:Rotimiexpert42@gmail.com" className="text-accent hover:underline">
-                    Rotimiexpert42@gmail.com
+                  <a href="mailto:rotimoxgrowthhubs@gmail.com" className="text-accent hover:underline">
+                    rotimoxgrowthhubs@gmail.com
                   </a>
                 </p>
               </div>
