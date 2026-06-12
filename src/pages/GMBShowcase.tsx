@@ -17,13 +17,8 @@ import {
   Star as StarIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { whatsappLink as buildWa } from "@/config/contact";
 
-/**
- * 📍 GMB CLIENT SHOWCASE DATA
- * To add a new business, append an object to this array.
- * Supported fields: name, category, location, description, image,
- * profileUrl, status, and review (with rating, text, author).
- */
 type Status = "Currently Managed" | "Completed Project" | "Optimized by Rotimox Sales";
 
 interface GMBClient {
@@ -43,46 +38,14 @@ interface GMBClient {
 
 const gmbClients: GMBClient[] = [
   {
-    name: "Bright Smile Dental Clinic",
-    category: "Healthcare / Dental",
-    location: "Accra, Ghana",
-    description:
-      "Full Google Business Profile optimization — keywords, services, posts, photos, and review management. Achieved top 3 local pack ranking within 90 days.",
-    image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
-    status: "Currently Managed",
-    review: {
-      text: "Our clinic now appears first when patients search nearby. Calls have tripled and reviews keep growing.",
-      author: "Dr. A. Mensah",
-      rating: 5,
-    },
-  },
-  {
-    name: "UrbanThreads Boutique",
-    category: "Retail / Fashion",
-    location: "Lagos, Nigeria",
-    description:
-      "Rebuilt the GMB profile from scratch with category fixes, weekly Google Posts, and review generation system. Direction requests up 480%.",
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
-    status: "Currently Managed",
-    review: {
-      text: "We get walk-in customers every day who say they found us on Google. Best decision we made this year.",
-      author: "Chiamaka O.",
-      rating: 5,
-    },
-  },
-  {
     name: "DAS GH LIMITED",
     category: "Corporate Services",
     location: "Accra, Ghana",
     description:
-      "Created and verified the Google Business Profile, listed all services, added live website URL, and optimized for local search visibility.",
+      "Created and verified the Google Business Profile, listed every service offered, attached a live website URL, and optimised the profile for stronger local search visibility.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
+    profileUrl: "https://dasghlimited.com",
     status: "Optimized by Rotimox Sales",
     review: {
       text: "Strong communication and effective delivery. Seeing my company listed online with a live URL made our services visible to clients. Very happy with the result.",
@@ -91,57 +54,88 @@ const gmbClients: GMBClient[] = [
     },
   },
   {
-    name: "Greenfield Auto Repair",
-    category: "Automotive Services",
-    location: "Nairobi, Kenya",
-    description:
-      "Recovered a suspended GMB listing, restructured categories, and built a 5-star review pipeline. Customer calls up 320% in 4 months.",
-    image:
-      "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
-    status: "Completed Project",
-    review: {
-      text: "Rotimox saved our listing and brought us back on the map — literally. Bookings are at an all-time high.",
-      author: "James K.",
-      rating: 5,
-    },
-  },
-  {
-    name: "Aroma Bistro & Café",
-    category: "Restaurant / Hospitality",
+    name: "Clean Masters Pro",
+    category: "Cleaning Services",
     location: "Abuja, Nigeria",
     description:
-      "Weekly Google Posts, menu uploads, photo SEO, and review responses. Profile views grew 7x and reservations doubled.",
+      "Rebuilt the Google Business Profile with proper categories, weekly posts, and a structured review-generation system. Grew the profile from 7 to 27+ verified reviews and improved local visibility.",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    profileUrl: buildWa("Hi Rotimox! Can I see the Clean Masters Pro GMB profile?"),
     status: "Currently Managed",
     review: {
-      text: "We're packed every weekend now. Google traffic became our #1 source of new customers.",
-      author: "Tunde A.",
+      text: "Rotimox Sales transformed our Google Business Profile. We now get consistent calls from clients who found us on Google.",
+      author: "Clean Masters Pro Team",
       rating: 5,
     },
   },
   {
-    name: "Elite Fitness Studio",
-    category: "Fitness / Wellness",
-    location: "London, United Kingdom",
+    name: "The Perfect Cleans",
+    category: "House Cleaning",
+    location: "Tamale, Ghana",
     description:
-      "Local SEO + GMB optimization with class schedules, photo galleries, and Q&A management. Ranked #1 for ‘fitness studio near me’.",
+      "Full profile optimisation — categories, services, hours, photos, and a structured review pipeline. Grew the profile from 0 reviews to a 5-star verified listing in the Tamale region.",
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
-    profileUrl: "https://www.google.com/maps",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80",
+    profileUrl: buildWa("Hi Rotimox! Can I see The Perfect Cleans GMB profile?"),
     status: "Completed Project",
     review: {
-      text: "Professional, fast, and results-driven. Our membership sign-ups doubled within two months.",
-      author: "Sarah M.",
+      text: "Before working with Rotimox, our profile was empty. Now clients trust us and book directly through Google. Highly recommended.",
+      author: "The Perfect Cleans",
+      rating: 5,
+    },
+  },
+  {
+    name: "Amoah & Associates",
+    category: "Professional Services",
+    location: "Ghana",
+    description:
+      "Delivered a full Google Business Profile audit and optimisation plan, fixing category, citation, and visibility issues — published as a verified client report.",
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+    profileUrl: "/audits/amoah-associates-google-profile-audit.pdf",
+    status: "Completed Project",
+    review: {
+      text: "Thorough, well-documented audit with a clear action plan. Exactly the level of detail we needed.",
+      author: "Amoah & Associates",
+      rating: 5,
+    },
+  },
+  {
+    name: "Guardian View Technology Ghana",
+    category: "Technology / Security",
+    location: "Ghana",
+    description:
+      "Aggressive Google Business Profile audit and SEO overhaul — surfacing visibility gaps and a prioritised fix-list that the client can action immediately.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    profileUrl: "/audits/guardian-view-technology-ghana.html",
+    status: "Completed Project",
+    review: {
+      text: "Detailed, professional, and easy to follow. The audit gave us a clear roadmap for growth.",
+      author: "Guardian View Technology",
+      rating: 5,
+    },
+  },
+  {
+    name: "Davita Fumigation & Cleaning",
+    category: "Cleaning / Pest Control",
+    location: "Ghana",
+    description:
+      "Aggressive Google Business Profile audit identifying ranking blockers, profile gaps, and a structured roadmap for improved local visibility and lead flow.",
+    image:
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    profileUrl: "/audits/davita-fumigation-cleaning.html",
+    status: "Completed Project",
+    review: {
+      text: "Insightful audit that highlighted issues we had no idea were hurting our visibility on Google.",
+      author: "Davita Fumigation",
       rating: 5,
     },
   },
 ];
 
-const whatsappLink =
-  "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I%20want%20to%20optimize%20my%20Google%20Business%20Profile.";
+const whatsappLink = buildWa("Hello Rotimox Sales! I want to optimise my Google Business Profile.");
 
 const statusStyles: Record<Status, string> = {
   "Currently Managed": "bg-success/15 text-success border-success/30",
@@ -159,15 +153,14 @@ const performanceStats = [
 
 const trustStats = [
   { icon: Award, value: "7+", label: "Years Experience" },
-  { icon: Building2, value: "200+", label: "GMB Profiles Optimized" },
+  { icon: Building2, value: "Verified", label: "Client Profiles" },
   { icon: Globe, value: "Worldwide", label: "Business Support" },
-  { icon: Users, value: "1,000+", label: "Trusted Clients" },
+  { icon: Users, value: "Trusted", label: "By Real Clients" },
 ];
 
 const GMBShowcase = () => {
   return (
     <Layout>
-      {/* Hero */}
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container-custom text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
@@ -178,14 +171,14 @@ const GMBShowcase = () => {
             GMB Success Showcase
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl mx-auto mb-8">
-            Real Google Business Profiles we manage and have optimized — driving more calls,
+            Real Google Business Profiles we manage and have optimised — driving more calls,
             visibility, and customers for businesses worldwide.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button variant="accent" size="lg">
                 <MessageCircle className="w-5 h-5" />
-                Optimize My Business Profile
+                Optimise My Business Profile
               </Button>
             </a>
             <Link to="/contact">
@@ -197,7 +190,6 @@ const GMBShowcase = () => {
         </div>
       </section>
 
-      {/* Trust Stats */}
       <section className="py-16 bg-muted/30">
         <div className="container-custom">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -219,7 +211,6 @@ const GMBShowcase = () => {
         </div>
       </section>
 
-      {/* GMB Client Cards */}
       <section className="py-20">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-14">
@@ -227,7 +218,7 @@ const GMBShowcase = () => {
               Businesses We've Helped Grow on Google
             </h2>
             <p className="text-muted-foreground text-lg">
-              Each profile below was optimized or is actively managed by Rotimox Sales.
+              Every profile below was optimised or is actively managed by Rotimox Sales.
             </p>
           </div>
 
@@ -237,7 +228,6 @@ const GMBShowcase = () => {
                 key={c.name}
                 className="group bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
               >
-                {/* Image */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={c.image}
@@ -252,7 +242,6 @@ const GMBShowcase = () => {
                   </div>
                 </div>
 
-                {/* Body */}
                 <div className="p-6 flex flex-col flex-1">
                   <div className="text-xs font-semibold text-accent uppercase tracking-wide mb-1">
                     {c.category}
@@ -269,7 +258,6 @@ const GMBShowcase = () => {
                     {c.description}
                   </p>
 
-                  {/* Review */}
                   <div className="bg-muted/40 border border-border rounded-xl p-4 mb-5 relative">
                     <Quote className="w-5 h-5 text-accent/40 absolute top-3 right-3" />
                     <div className="flex items-center gap-1 mb-2">
@@ -306,7 +294,7 @@ const GMBShowcase = () => {
                     >
                       <Button variant="outline" className="w-full">
                         <ExternalLink className="w-4 h-4" />
-                        View Business Profile
+                        View Details
                       </Button>
                     </a>
                     <a
@@ -328,7 +316,6 @@ const GMBShowcase = () => {
         </div>
       </section>
 
-      {/* Performance Highlights */}
       <section className="py-20 bg-muted/30">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -336,7 +323,7 @@ const GMBShowcase = () => {
               Results We Deliver
             </h2>
             <p className="text-muted-foreground text-lg">
-              The performance lift our clients consistently see after we optimize their profiles.
+              The performance lift our clients consistently see after we optimise their profiles.
             </p>
           </div>
 
@@ -361,15 +348,14 @@ const GMBShowcase = () => {
         </div>
       </section>
 
-      {/* Authority Strip */}
       <section className="py-16">
         <div className="container-custom">
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              "5+ Years Experience",
+              "7+ Years Experience",
               "Professional GMB Specialist",
               "Worldwide Business Support",
-              "Trusted by Business Owners",
+              "Trusted by Real Business Owners",
             ].map((item) => (
               <div
                 key={item}
@@ -383,14 +369,13 @@ const GMBShowcase = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container-custom text-center max-w-3xl">
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
             Ready to Grow Your Google Business Profile?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8">
-            Join hundreds of businesses gaining more visibility, calls, and customers with
+            Join the businesses gaining more visibility, calls, and customers with
             Rotimox Sales managing their Google presence.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
