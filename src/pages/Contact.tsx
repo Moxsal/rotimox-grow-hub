@@ -8,17 +8,17 @@ import { useToast } from "@/hooks/use-toast";
 import {
   MessageCircle,
   Mail,
-  Phone,
   MapPin,
   Send,
   Clock,
   CheckCircle,
   Loader2,
+  Send as SendIcon,
 } from "lucide-react";
+import { CONTACT, EMAIL_LINK, TELEGRAM_LINK, WHATSAPP_DEFAULT } from "@/config/contact";
 
-const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
-const emailLink = "mailto:Rotimiexpert42@gmail.com";
-const phoneLink = "tel:+2349169945833";
+const whatsappLink = WHATSAPP_DEFAULT;
+const emailLink = EMAIL_LINK;
 
 const Contact = () => {
   const { toast } = useToast();
