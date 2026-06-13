@@ -100,7 +100,7 @@ const testimonials = [
   },
 ];
 
-const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
+const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Growth%20Hubs!%20I'm%20interested%20in%20your%20services.";
 
 const Index = () => {
   return (
@@ -116,11 +116,13 @@ const Index = () => {
               Our Services
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mt-4 mb-6">
-              Digital Solutions That Drive{" "}
-              <span className="text-accent">Real Results</span>
+              Everything You Need to{" "}
+              <span className="text-accent">Grow Online</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              We offer comprehensive digital marketing services designed to help your business grow and succeed in the digital age.
+              Rotimox Growth Hubs helps businesses grow faster with professional digital
+              marketing, website development, business optimisation, and growth-focused
+              solutions across every major platform.
             </p>
           </div>
 
@@ -154,7 +156,9 @@ const Index = () => {
                 <span className="text-accent">Priority</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                With over 7 years of professional experience, we've helped 1,000+ happy and satisfied clients worldwide gain visibility, trust, and unlimited customers. As a worldwide digital agency, we serve clients across all countries with the same dedication and expertise.
+                With 7+ years of professional experience and 1,000+ happy clients worldwide,
+                Rotimox Growth Hubs (powered by Rotimox Sales) helps businesses gain
+                visibility, trust, and unlimited customers across every major digital platform.
               </p>
 
               <div className="space-y-4">
@@ -214,7 +218,7 @@ const Index = () => {
               <span className="text-accent">Say About Us</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Don't just take our word for it. Here's what our satisfied clients have to say about working with Rotimox Sales.
+              Don't just take our word for it. Here's what real clients have to say about working with Rotimox Growth Hubs.
             </p>
           </div>
 
@@ -243,7 +247,7 @@ const Index = () => {
             Ready to Grow Your Business?
           </h2>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-            Join 1,000+ satisfied clients worldwide who have transformed their online presence with Rotimox Sales. Get your free consultation today!
+            Join 1,000+ satisfied clients worldwide who have transformed their online presence with Rotimox Growth Hubs. Get your free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">

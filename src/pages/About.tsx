@@ -12,7 +12,7 @@ import {
   Share2,
 } from "lucide-react";
 
-const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
+const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Growth%20Hubs!%20I'm%20interested%20in%20your%20services.";
 
 const expertise = [
   {
@@ -70,11 +70,11 @@ const About = () => {
             About Us
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground mt-4 mb-6">
-            Your Trusted Partner in{" "}
+            Rotimox Growth Hubs — Your Partner in{" "}
             <span className="text-accent">Digital Growth</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg max-w-3xl mx-auto">
-            Rotimox Sales is a worldwide digital agency helping businesses gain visibility, trust, and unlimited clients through expert digital marketing solutions.
+            An international digital growth agency helping businesses gain visibility, leads, customers and revenue through expert digital marketing solutions. Powered by Rotimox Sales.
           </p>
         </div>
       </section>
@@ -89,10 +89,10 @@ const About = () => {
                 <span className="text-accent">Professional Experience</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                At Rotimox Sales, we're passionate about helping businesses thrive in the digital landscape. With over 7 years of professional experience and 1,000+ happy clients worldwide, we've developed proven strategies that deliver real, measurable results.
+                At Rotimox Growth Hubs, we're passionate about helping businesses thrive online. Founded by Rotimox Sales, with 7+ years of professional experience and 1,000+ happy clients worldwide, we've developed proven strategies that deliver real, measurable results.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                As a worldwide digital agency, we serve clients across all countries, bringing the same level of dedication, expertise, and personalized attention to every project. Whether you're a local business looking to dominate your market or a global brand seeking to expand your reach, we have the skills and experience to help you succeed.
+                As an international digital agency, we serve clients across all countries — whether you're a local business looking to dominate your market or a global brand seeking to expand, we have the skills, tools and experience to help you grow.
               </p>
 
               <div className="space-y-4">
