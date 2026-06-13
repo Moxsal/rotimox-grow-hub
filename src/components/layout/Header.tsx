@@ -21,18 +21,21 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20your%20services.";
+  const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Growth%20Hubs!%20I'm%20interested%20in%20your%20services.";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <nav className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <img 
-            src={rotimoxLogo} 
-            alt="Rotimox Digital Growth" 
+        <Link to="/" className="flex items-center gap-3" aria-label="Rotimox Growth Hubs home">
+          <img
+            src={rotimoxLogo}
+            alt="Rotimox Growth Hubs"
             className="h-12 w-auto object-contain"
           />
+          <span className="hidden sm:inline font-display font-bold text-foreground text-lg leading-tight">
+            Rotimox <span className="text-accent">Growth Hubs</span>
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

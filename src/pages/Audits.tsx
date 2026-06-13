@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import AuditCenter from "@/components/sections/AuditCenter";
 
 /**
  * 📂 AUDIT DATA
@@ -76,7 +77,7 @@ const audits: AuditItem[] = [
 const filters = ["All", "GMB Performance Audit", "SEO Audit", "Website Audit"] as const;
 
 const whatsappLink =
-  "https://wa.me/2349027284784?text=Hello%20Rotimox!%20I'd%20like%20a%20professional%20audit%20for%20my%20business.";
+  "https://wa.me/2349027284784?text=Hello%20Rotimox%20Growth%20Hubs!%20I'd%20like%20a%20professional%20audit%20for%20my%20business.";
 
 const Audits = () => {
   const [query, setQuery] = useState("");
@@ -105,28 +106,32 @@ const Audits = () => {
             Proof of Work
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground mt-4 mb-6">
-            SEO & GMB <span className="text-accent">Audit Results</span>
+            AI Audit Center & <span className="text-accent">Client Audit Reports</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg max-w-3xl mx-auto mb-8">
-            Real, verified audits delivered to real businesses. Browse, preview,
-            or download our professional client audit reports.
+            Run a free instant AI audit for Google, Shopify, Etsy, WooCommerce, TikTok,
+            Facebook, Instagram, LinkedIn, X, Threads, YouTube, Jiji or your business
+            website — and browse real audits Rotimox Growth Hubs has delivered for clients.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <a href="#audit-center">
               <Button variant="hero" size="xl">
-                <MessageCircle className="w-5 h-5" />
-                Request Your Audit
-              </Button>
-            </a>
-            <Link to="/contact">
-              <Button variant="heroOutline" size="xl">
-                Book Consultation
+                Run Free AI Audit
                 <ArrowRight className="w-5 h-5" />
               </Button>
-            </Link>
+            </a>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button variant="heroOutline" size="xl">
+                <MessageCircle className="w-5 h-5" />
+                Request Manual Audit
+              </Button>
+            </a>
           </div>
         </div>
       </section>
+
+      {/* AI Audit Center */}
+      <AuditCenter />
 
       {/* Pricing — Business Audit Service */}
       <section className="py-16 bg-background border-b border-border">

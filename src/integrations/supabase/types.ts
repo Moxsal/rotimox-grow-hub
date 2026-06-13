@@ -14,6 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
+      audit_requests: {
+        Row: {
+          analysis: Json | null
+          business_name: string
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          message: string | null
+          platform: string
+          status: string
+          updated_at: string
+          url: string
+        }
+        Insert: {
+          analysis?: Json | null
+          business_name: string
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          message?: string | null
+          platform: string
+          status?: string
+          updated_at?: string
+          url: string
+        }
+        Update: {
+          analysis?: Json | null
+          business_name?: string
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          message?: string | null
+          platform?: string
+          status?: string
+          updated_at?: string
+          url?: string
+        }
+        Relationships: []
+      }
       chat_messages: {
         Row: {
           chat_id: string
