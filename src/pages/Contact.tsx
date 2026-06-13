@@ -15,7 +15,7 @@ import {
   Loader2,
   Send as SendIcon,
 } from "lucide-react";
-import { CONTACT, EMAIL_LINK, TELEGRAM_LINK, WHATSAPP_DEFAULT } from "@/config/contact";
+import { CONTACT, EMAIL_LINK, TELEGRAM_LINK, WHATSAPP_DEFAULT, WHATSAPP_SECONDARY_DEFAULT } from "@/config/contact";
 
 const whatsappLink = WHATSAPP_DEFAULT;
 const emailLink = EMAIL_LINK;
@@ -66,7 +66,7 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 800));
 
     // Open WhatsApp with the message
-    const message = `Hello Rotimox Sales!
+    const message = `Hello Rotimox Growth Hubs!
 
 Name: ${formData.name.trim()}
 Email: ${formData.email.trim()}
@@ -74,7 +74,7 @@ Email: ${formData.email.trim()}
 Message: ${formData.message.trim()}`;
 
     window.open(
-      `https://wa.me/2349027284784?text=${encodeURIComponent(message)}`,
+      `https://wa.me/${CONTACT.whatsappNumber}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
 
@@ -100,7 +100,7 @@ Message: ${formData.message.trim()}`;
             <span className="text-accent">Success Story</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg max-w-3xl mx-auto">
-            Ready to grow your business? Get in touch with us today and let's discuss how we can help you achieve your goals.
+            Ready to grow your business? Reach out to Rotimox Growth Hubs today — we'll show you exactly how we can help.
           </p>
         </div>
       </section>
@@ -136,6 +136,25 @@ Message: ${formData.message.trim()}`;
                     <p className="text-accent font-medium">Chat with us on WhatsApp</p>
                     <p className="text-muted-foreground text-sm mt-1">
                       Tap to start a direct chat →
+                    </p>
+                  </div>
+                </a>
+
+                {/* Secondary direct WhatsApp — Contact page only */}
+                <a
+                  href={WHATSAPP_SECONDARY_DEFAULT}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-accent hover:shadow-lg transition-all duration-200 group cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center group-hover:bg-success group-hover:scale-110 transition-all duration-200">
+                    <MessageCircle className="w-6 h-6 text-success group-hover:text-success-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">Direct WhatsApp Line</h3>
+                    <p className="text-accent font-medium">Secondary direct contact</p>
+                    <p className="text-muted-foreground text-sm mt-1">
+                      Tap to chat directly with the founder →
                     </p>
                   </div>
                 </a>

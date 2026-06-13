@@ -11,7 +11,7 @@ const SESSION_KEY = "rotimox_chat_session";
 const WELCOME: Msg = {
   role: "assistant",
   content:
-    "👋 Hi! Welcome to Rotimox Sales.\n\nHow can we help you today? Ask me anything about GMB optimization, website design, review growth, social media marketing, SEO audits, or business growth.",
+    "👋 Hi! Welcome to Rotimox Growth Hubs.\n\nHow can we help you today?\n\nWe're here to assist with audits, marketing, websites, SEO, social media growth, Google Business Profile optimization, Shopify, Etsy, WooCommerce, Jiji and overall business growth.",
 };
 
 function getSession() {
