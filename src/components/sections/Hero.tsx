@@ -3,13 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const whatsappLink = "https://wa.me/2349027284784?text=Hello%20Rotimox%20Sales!%20I'm%20interested%20in%20a%20free%20consultation.";
+  const whatsappLink =
+    "https://wa.me/2349027284784?text=Hello%20Rotimox%20Growth%20Hubs!%20I'm%20interested%20in%20a%20free%20consultation.";
 
   const features = [
-    "Google My Business Growth",
-    "Reviews Management",
-    "Social Media Marketing",
-    "Website Development",
+    "Digital Marketing & SEO",
+    "Website Design & Redesign",
+    "Social Media Growth",
+    "Google, Shopify, Etsy, Jiji",
   ];
 
   return (
@@ -26,18 +27,18 @@ const Hero = () => {
           <div className="space-y-8 animate-slide-up">
             <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-              Trusted by 1,000+ Businesses Worldwide
+              International Digital Growth Agency · Powered by Rotimox Sales
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight">
-              Helping Businesses Grow with{" "}
-              <span className="text-accent">Google My Business</span>, Reviews &{" "}
-              <span className="text-accent">Digital Marketing</span>
+              <span className="text-accent">Rotimox Growth Hubs</span> — Helping Businesses
+              Grow Faster Online
             </h1>
 
             <p className="text-xl text-primary-foreground/80 leading-relaxed max-w-xl">
-              Professional GMB Optimization, Social Media Growth & Website Development with over{" "}
-              <strong className="text-accent">7 Years Experience</strong>.
+              Professional digital marketing, website development, SEO, social media growth,
+              and platform-specific business optimisation across Google, Shopify, Etsy,
+              WooCommerce, Jiji and every major social network.
             </p>
 
             {/* Features List */}

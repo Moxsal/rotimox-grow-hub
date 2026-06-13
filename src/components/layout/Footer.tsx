@@ -31,15 +31,23 @@ const Footer = () => {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center gap-3">
               <img
                 src={rotimoxLogo}
-                alt="Rotimox Digital Growth"
+                alt="Rotimox Growth Hubs"
                 className="h-12 w-auto object-contain brightness-0 invert"
               />
+              <span className="font-display font-bold text-lg leading-tight">
+                Rotimox <span className="text-accent">Growth Hubs</span>
+              </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              A worldwide digital agency helping businesses grow through Google My Business optimisation, reviews management, and modern digital marketing.
+              An international digital growth agency helping businesses gain more
+              visibility, leads, customers and revenue through digital marketing,
+              websites, SEO, social media and platform-specific growth strategies.
+            </p>
+            <p className="text-primary-foreground/50 text-xs italic">
+              Powered by Rotimox Sales
             </p>
             <div className="flex items-center gap-4 pt-2">
               <a
